@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="0ax-rg-Rc3" customClass="ServiceTypeCell" customModule="MovieInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0ax-rg-Rc3" id="bRA-Fg-UmG">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ESB-AM-p0g">
+                        <rect key="frame" x="17" y="5" width="74" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="fiE-zN-723"/>
+                            <constraint firstAttribute="height" constant="54" id="uQe-hG-uOY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-T1-0rx">
+                        <rect key="frame" x="105" y="22" width="293" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="293" id="3JG-57-PjB"/>
+                            <constraint firstAttribute="height" constant="21" id="a1D-rM-pqH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="csc-T1-0rx" firstAttribute="top" secondItem="bRA-Fg-UmG" secondAttribute="top" constant="22" id="2pK-0c-6Af"/>
+                    <constraint firstItem="csc-T1-0rx" firstAttribute="top" secondItem="bRA-Fg-UmG" secondAttribute="top" constant="22" id="8Gv-GP-qVm"/>
+                    <constraint firstAttribute="bottom" secondItem="csc-T1-0rx" secondAttribute="bottom" constant="22" id="Dlu-gM-yGr"/>
+                    <constraint firstItem="ESB-AM-p0g" firstAttribute="leading" secondItem="bRA-Fg-UmG" secondAttribute="leading" constant="17" id="Lbv-q7-LFw"/>
+                    <constraint firstAttribute="bottom" secondItem="csc-T1-0rx" secondAttribute="bottom" constant="22" id="VHq-jH-J4k"/>
+                    <constraint firstItem="ESB-AM-p0g" firstAttribute="top" secondItem="bRA-Fg-UmG" secondAttribute="top" constant="5" id="d24-pE-ogF"/>
+                    <constraint firstItem="csc-T1-0rx" firstAttribute="leading" secondItem="ESB-AM-p0g" secondAttribute="trailing" constant="14" id="tcs-sq-9t7"/>
+                    <constraint firstAttribute="trailing" secondItem="csc-T1-0rx" secondAttribute="trailing" constant="16" id="yQf-UB-XOI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelName" destination="csc-T1-0rx" id="c2M-4f-uyD"/>
+                <outlet property="serviceImage" destination="ESB-AM-p0g" id="JZX-De-HOn"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="495.87053571428567"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="600" height="564"/>
+    </resources>
+</document>

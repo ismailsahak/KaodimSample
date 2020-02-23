@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="serviceTypeGroupCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="PkL-VB-UTV" customClass="ServiceTypeGroupCell" customModule="Kaodim_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PkL-VB-UTV" id="ZdF-D7-fok">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-HJ-uPX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="WXS-m7-d8C"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sample label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8J-ZB-Gsr">
+                        <rect key="frame" x="16" y="28" width="378" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="GgE-Vp-sq4"/>
+                            <constraint firstAttribute="height" constant="21" id="f4S-BF-Scc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y8J-ZB-Gsr" firstAttribute="top" secondItem="qNj-HJ-uPX" secondAttribute="bottom" constant="12" id="02b-My-ecI"/>
+                    <constraint firstItem="y8J-ZB-Gsr" firstAttribute="leading" secondItem="ZdF-D7-fok" secondAttribute="leading" constant="16" id="OVf-Ec-hpb"/>
+                    <constraint firstAttribute="bottom" secondItem="y8J-ZB-Gsr" secondAttribute="bottom" constant="12" id="sVM-6K-ThZ"/>
+                    <constraint firstAttribute="trailing" secondItem="y8J-ZB-Gsr" secondAttribute="trailing" constant="16" id="vbI-r0-RLv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="y8J-ZB-Gsr" id="YFk-w3-AVK"/>
+            </connections>
+            <point key="canvasLocation" x="834.78260869565224" y="141.96428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
