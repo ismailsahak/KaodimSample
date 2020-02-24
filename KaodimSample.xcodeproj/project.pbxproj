@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1347C56F8DED8E226765F93E /* Pods_KaodimSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD111B788025FFF8C3ACAF /* Pods_KaodimSample.framework */; };
 		8BA3C3022234D68B00DD11C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C3012234D68B00DD11C1 /* AppDelegate.swift */; };
 		8BA3C3072234D68B00DD11C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C3052234D68B00DD11C1 /* Main.storyboard */; };
 		8BA3C3092234D68E00DD11C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C3082234D68E00DD11C1 /* Assets.xcassets */; };
@@ -16,17 +17,33 @@
 		8BA3C3232234E11300DD11C1 /* ServiceTypesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C3222234E11300DD11C1 /* ServiceTypesStore.swift */; };
 		8BA3C3252234E15400DD11C1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C3242234E15400DD11C1 /* ApiService.swift */; };
 		8BA3C32B22356B9700DD11C1 /* ServiceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C32A22356B9700DD11C1 /* ServiceListViewModel.swift */; };
-		99CFD54E4FE05981C52C039F /* Pods_KaodimSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABB3A066AD10ACEB6ABA230 /* Pods_KaodimSample.framework */; };
-		EC07319D240289D8001171D3 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07319C240289D8001171D3 /* ListItem.swift */; };
 		EC0731A32402B699001171D3 /* ServiceTypeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0731A22402B699001171D3 /* ServiceTypeHeader.xib */; };
 		EC0731A52402B70D001171D3 /* ServiceTypeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0731A42402B70D001171D3 /* ServiceTypeHeader.swift */; };
 		EC3EE87824016D4200529ED1 /* ServiceTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC3EE87724016D4200529ED1 /* ServiceTypeCell.xib */; };
 		EC3EE87A24016EFA00529ED1 /* ServiceTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3EE87924016EFA00529ED1 /* ServiceTypeCell.swift */; };
 		EC3EE87C2401787700529ED1 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3EE87B2401787700529ED1 /* ServiceType.swift */; };
+		ECE1A8B02403FBF8005E94F2 /* ServiceTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE744224034B6C001EC76E /* ServiceTypeRepository.swift */; };
+		ECE1A8B12403FC63005E94F2 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3EE87B2401787700529ED1 /* ServiceType.swift */; };
+		ECE1A8B22403FDA0005E94F2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C3242234E15400DD11C1 /* ApiService.swift */; };
+		ECE1A8B32403FF8A005E94F2 /* ServiceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C32A22356B9700DD11C1 /* ServiceListViewModel.swift */; };
+		ECE1A8B424040031005E94F2 /* ServiceTypesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C3222234E11300DD11C1 /* ServiceTypesStore.swift */; };
+		ECEE743824034822001EC76E /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE743724034822001EC76E /* ViewModelTests.swift */; };
+		ECEE744324034B6C001EC76E /* ServiceTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE744224034B6C001EC76E /* ServiceTypeRepository.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ECEE743A24034822001EC76E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA3C2F62234D68B00DD11C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA3C2FD2234D68B00DD11C1;
+			remoteInfo = KaodimSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		352B4CB7587A2E0184FBC860 /* Pods-KaodimSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaodimSample.release.xcconfig"; path = "Target Support Files/Pods-KaodimSample/Pods-KaodimSample.release.xcconfig"; sourceTree = "<group>"; };
+		0ECD111B788025FFF8C3ACAF /* Pods_KaodimSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaodimSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F02581465A8557AB5D3A93 /* Pods-KaodimSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaodimSample.release.xcconfig"; path = "Target Support Files/Pods-KaodimSample/Pods-KaodimSample.release.xcconfig"; sourceTree = "<group>"; };
 		8BA3C2FE2234D68B00DD11C1 /* Kaodim Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaodim Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA3C3012234D68B00DD11C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BA3C3062234D68B00DD11C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,14 +55,16 @@
 		8BA3C3222234E11300DD11C1 /* ServiceTypesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTypesStore.swift; sourceTree = "<group>"; };
 		8BA3C3242234E15400DD11C1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		8BA3C32A22356B9700DD11C1 /* ServiceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewModel.swift; sourceTree = "<group>"; };
-		AABB3A066AD10ACEB6ABA230 /* Pods_KaodimSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaodimSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4DBC3B583790A0F7196B95A /* Pods-KaodimSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaodimSample.debug.xcconfig"; path = "Target Support Files/Pods-KaodimSample/Pods-KaodimSample.debug.xcconfig"; sourceTree = "<group>"; };
-		EC07319C240289D8001171D3 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		B034F7CDC91EAA5A1D0EF262 /* Pods-KaodimSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaodimSample.debug.xcconfig"; path = "Target Support Files/Pods-KaodimSample/Pods-KaodimSample.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0731A22402B699001171D3 /* ServiceTypeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTypeHeader.xib; sourceTree = "<group>"; };
 		EC0731A42402B70D001171D3 /* ServiceTypeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeHeader.swift; sourceTree = "<group>"; };
 		EC3EE87724016D4200529ED1 /* ServiceTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTypeCell.xib; sourceTree = "<group>"; };
 		EC3EE87924016EFA00529ED1 /* ServiceTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeCell.swift; sourceTree = "<group>"; };
 		EC3EE87B2401787700529ED1 /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		ECEE743524034822001EC76E /* ViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECEE743724034822001EC76E /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		ECEE743924034822001EC76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECEE744224034B6C001EC76E /* ServiceTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +72,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99CFD54E4FE05981C52C039F /* Pods_KaodimSample.framework in Frameworks */,
+				1347C56F8DED8E226765F93E /* Pods_KaodimSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECEE743224034822001EC76E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +89,8 @@
 		3CFC7A0F27F4D69F273718E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B4DBC3B583790A0F7196B95A /* Pods-KaodimSample.debug.xcconfig */,
-				352B4CB7587A2E0184FBC860 /* Pods-KaodimSample.release.xcconfig */,
+				B034F7CDC91EAA5A1D0EF262 /* Pods-KaodimSample.debug.xcconfig */,
+				55F02581465A8557AB5D3A93 /* Pods-KaodimSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -73,9 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				8BA3C3002234D68B00DD11C1 /* KaodimSample */,
+				ECEE743624034822001EC76E /* ViewModelTests */,
 				8BA3C2FF2234D68B00DD11C1 /* Products */,
 				3CFC7A0F27F4D69F273718E5 /* Pods */,
-				D2D29063A55DA62FC470D19A /* Frameworks */,
+				91368D73F30755B2284BE328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA3C2FE2234D68B00DD11C1 /* Kaodim Test.app */,
+				ECEE743524034822001EC76E /* ViewModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +122,7 @@
 				8BA3C31A2234DDC300DD11C1 /* Cells */,
 				8BA3C3182234DD1000DD11C1 /* Models */,
 				8BA3C3192234DD2600DD11C1 /* Resources */,
-				8BA3C3212234E0E000DD11C1 /* Services */,
+				8BA3C3212234E0E000DD11C1 /* Repository */,
 				8BA3C3172234DD0800DD11C1 /* View */,
 			);
 			path = KaodimSample;
@@ -139,19 +167,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		8BA3C3212234E0E000DD11C1 /* Services */ = {
+		8BA3C3212234E0E000DD11C1 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				8BA3C3262234E39500DD11C1 /* Protocols */,
 				8BA3C3222234E11300DD11C1 /* ServiceTypesStore.swift */,
 			);
-			path = Services;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		8BA3C3262234E39500DD11C1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				8BA3C3242234E15400DD11C1 /* ApiService.swift */,
+				ECEE744224034B6C001EC76E /* ServiceTypeRepository.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -160,15 +189,14 @@
 			isa = PBXGroup;
 			children = (
 				8BA3C32A22356B9700DD11C1 /* ServiceListViewModel.swift */,
-				EC07319C240289D8001171D3 /* ListItem.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		D2D29063A55DA62FC470D19A /* Frameworks */ = {
+		91368D73F30755B2284BE328 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AABB3A066AD10ACEB6ABA230 /* Pods_KaodimSample.framework */,
+				0ECD111B788025FFF8C3ACAF /* Pods_KaodimSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,6 +210,15 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		ECEE743624034822001EC76E /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE743724034822001EC76E /* ViewModelTests.swift */,
+				ECEE743924034822001EC76E /* Info.plist */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,11 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BA3C3102234D68E00DD11C1 /* Build configuration list for PBXNativeTarget "KaodimSample" */;
 			buildPhases = (
-				042EF0B580F613500511220A /* [CP] Check Pods Manifest.lock */,
+				3E2AE4B4AFC887AE721FF580 /* [CP] Check Pods Manifest.lock */,
 				8BA3C2FA2234D68B00DD11C1 /* Sources */,
 				8BA3C2FB2234D68B00DD11C1 /* Frameworks */,
 				8BA3C2FC2234D68B00DD11C1 /* Resources */,
-				EAB593314F52B00AA79E5AD5 /* [CP] Embed Pods Frameworks */,
+				E2C81C8B935953EA190E3C12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,18 +241,40 @@
 			productReference = 8BA3C2FE2234D68B00DD11C1 /* Kaodim Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ECEE743424034822001EC76E /* ViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECEE743E24034822001EC76E /* Build configuration list for PBXNativeTarget "ViewModelTests" */;
+			buildPhases = (
+				ECEE743124034822001EC76E /* Sources */,
+				ECEE743224034822001EC76E /* Frameworks */,
+				ECEE743324034822001EC76E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECEE743B24034822001EC76E /* PBXTargetDependency */,
+			);
+			name = ViewModelTests;
+			productName = ViewModelTests;
+			productReference = ECEE743524034822001EC76E /* ViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8BA3C2F62234D68B00DD11C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Alfian Losari";
+				ORGANIZATIONNAME = "Ismail Sahak";
 				TargetAttributes = {
 					8BA3C2FD2234D68B00DD11C1 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					ECEE743424034822001EC76E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8BA3C2FD2234D68B00DD11C1;
 					};
 				};
 			};
@@ -233,6 +292,7 @@
 			projectRoot = "";
 			targets = (
 				8BA3C2FD2234D68B00DD11C1 /* KaodimSample */,
+				ECEE743424034822001EC76E /* ViewModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,10 +310,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECEE743324034822001EC76E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		042EF0B580F613500511220A /* [CP] Check Pods Manifest.lock */ = {
+		3E2AE4B4AFC887AE721FF580 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,7 +342,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EAB593314F52B00AA79E5AD5 /* [CP] Embed Pods Frameworks */ = {
+		E2C81C8B935953EA190E3C12 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,20 +375,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC07319D240289D8001171D3 /* ListItem.swift in Sources */,
 				8BA3C3022234D68B00DD11C1 /* AppDelegate.swift in Sources */,
 				8BA3C3142234D8E300DD11C1 /* HomeViewController.swift in Sources */,
 				8BA3C3232234E11300DD11C1 /* ServiceTypesStore.swift in Sources */,
 				EC3EE87C2401787700529ED1 /* ServiceType.swift in Sources */,
 				EC0731A52402B70D001171D3 /* ServiceTypeHeader.swift in Sources */,
 				8BA3C32B22356B9700DD11C1 /* ServiceListViewModel.swift in Sources */,
+				ECEE744324034B6C001EC76E /* ServiceTypeRepository.swift in Sources */,
 				8BA3C3162234D90500DD11C1 /* EventsViewController.swift in Sources */,
 				8BA3C3252234E15400DD11C1 /* ApiService.swift in Sources */,
 				EC3EE87A24016EFA00529ED1 /* ServiceTypeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECEE743124034822001EC76E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEE743824034822001EC76E /* ViewModelTests.swift in Sources */,
+				ECE1A8B32403FF8A005E94F2 /* ServiceListViewModel.swift in Sources */,
+				ECE1A8B02403FBF8005E94F2 /* ServiceTypeRepository.swift in Sources */,
+				ECE1A8B424040031005E94F2 /* ServiceTypesStore.swift in Sources */,
+				ECE1A8B22403FDA0005E94F2 /* ApiService.swift in Sources */,
+				ECE1A8B12403FC63005E94F2 /* ServiceType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECEE743B24034822001EC76E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BA3C2FD2234D68B00DD11C1 /* KaodimSample */;
+			targetProxy = ECEE743A24034822001EC76E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8BA3C3052234D68B00DD11C1 /* Main.storyboard */ = {
@@ -401,6 +489,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -439,7 +528,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -455,13 +544,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8BA3C3112234D68E00DD11C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4DBC3B583790A0F7196B95A /* Pods-KaodimSample.debug.xcconfig */;
+			baseConfigurationReference = B034F7CDC91EAA5A1D0EF262 /* Pods-KaodimSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,7 +570,7 @@
 		};
 		8BA3C3122234D68E00DD11C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 352B4CB7587A2E0184FBC860 /* Pods-KaodimSample.release.xcconfig */;
+			baseConfigurationReference = 55F02581465A8557AB5D3A93 /* Pods-KaodimSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +584,46 @@
 				PRODUCT_NAME = "Kaodim Test";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECEE743C24034822001EC76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViewModelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismail.ViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaodim Test.app/Kaodim Test";
+			};
+			name = Debug;
+		};
+		ECEE743D24034822001EC76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViewModelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismail.ViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaodim Test.app/Kaodim Test";
 			};
 			name = Release;
 		};
@@ -514,6 +644,15 @@
 			buildConfigurations = (
 				8BA3C3112234D68E00DD11C1 /* Debug */,
 				8BA3C3122234D68E00DD11C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECEE743E24034822001EC76E /* Build configuration list for PBXNativeTarget "ViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECEE743C24034822001EC76E /* Debug */,
+				ECEE743D24034822001EC76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol ApiService {
-    func fetchServices(from endpoint: Endpoint, successHandler: @escaping (_ response: [ServiceTypeGroup]) -> Void, errorHandler: @escaping(_ error: Error) -> Void)
-}
-
 public enum Endpoint: String, CaseIterable {
     case home = "api/v1/home"
     case events = "api/v1/events"

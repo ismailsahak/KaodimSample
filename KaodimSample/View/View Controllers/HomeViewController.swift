@@ -17,7 +17,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     
     var viewModel: ServiceListViewModel!
-    var listItem: ListItem!
     let disposeBag = DisposeBag()
  
     override func viewDidLoad() {
@@ -25,7 +24,7 @@ class HomeViewController: UIViewController {
         
         setTitle()
         
-        viewModel = ServiceListViewModel(endpoint: Endpoint.home, apiService: ServiceTypeRepository.shared)
+        viewModel = ServiceListViewModel(endpoint: Endpoint.home, repository: ServiceTypeListRepository.shared)
         
         viewModel.list.drive(onNext: {[unowned self] (_) in
             self.tableView.reloadData()
@@ -66,8 +65,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        listItem = ListItem(viewModel.servicesGroupList[section])
-        return listItem.rowCount
+        return viewModel.numberOfServiceTypes(index: section)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

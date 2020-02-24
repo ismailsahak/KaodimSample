@@ -7,9 +7,9 @@
 
 import Foundation
 
-public class ServiceTypeRepository: ApiService {
+public class ServiceTypeListRepository: ServiceTypeRepository {
     
-    public static let shared = ServiceTypeRepository()
+    public static let shared = ServiceTypeListRepository()
     private init() {}
     private let baseAPIURL = "https://5d1dae5d3374890014f005d1.mockapi.io/"
     private let urlSession = URLSession.shared
@@ -20,8 +20,7 @@ public class ServiceTypeRepository: ApiService {
         return jsonDecoder
     }()
     
-    
-    public func fetchServices(from endpoint: Endpoint, successHandler: @escaping (_ response: [ServiceTypeGroup]) -> Void, errorHandler: @escaping(_ error: Error) -> Void) {
+    func fetchServices(from endpoint: Endpoint, successHandler: @escaping (_ response: [ServiceTypeGroup]) -> Void, errorHandler: @escaping(_ error: Error) -> Void) {
         
         guard let urlComponents = URLComponents(string: "\(baseAPIURL)\(endpoint.rawValue)") else {
             errorHandler(ApiError.invalidEndpoint)

@@ -17,7 +17,6 @@ class EventsViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     
     var viewModel: ServiceListViewModel!
-    var listItem: ListItem!
     let disposeBag = DisposeBag()
  
     override func viewDidLoad() {
@@ -25,7 +24,7 @@ class EventsViewController: UIViewController {
         
         setTitle()
         
-        viewModel = ServiceListViewModel(endpoint: Endpoint.events, apiService: ServiceTypeRepository.shared)
+        viewModel = ServiceListViewModel(endpoint: Endpoint.events, repository: ServiceTypeListRepository.shared)
         
         viewModel.list.drive(onNext: {[unowned self] (_) in
             self.tableView.reloadData()
@@ -66,8 +65,7 @@ extension EventsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        listItem = ListItem(viewModel.servicesGroupList[section])
-        return listItem.rowCount
+        return viewModel.numberOfServiceTypes(index: section)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

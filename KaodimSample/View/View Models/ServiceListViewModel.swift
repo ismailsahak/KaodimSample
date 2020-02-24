@@ -10,13 +10,13 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class ServiceListViewModel {
+final class ServiceListViewModel {
     
-    private let apiService: ApiService
+    private let repository: ServiceTypeRepository
     private let disposeBag = DisposeBag()
     
-    init(endpoint: Endpoint, apiService: ApiService) {
-        self.apiService = apiService
+    init(endpoint: Endpoint, repository: ServiceTypeRepository) {
+        self.repository = repository
         fetchServices(endpoint: endpoint)
     }
     
@@ -49,11 +49,7 @@ class ServiceListViewModel {
     }
     
     func numberOfServiceTypes(index: Int) -> Int {
-        return getItemList(index: index).rowCount
-    }
-    
-    func getItemList(index: Int) -> ListItem {
-        return ListItem(_serviceTypeGroupList.value[index])
+        return _serviceTypeGroupList.value[index].serviceTypes.count
     }
     
     private func fetchServices(endpoint: Endpoint) {
@@ -61,7 +57,7 @@ class ServiceListViewModel {
         self._isFetching.accept(true)
         self._error.accept(nil)
         
-        apiService.fetchServices(from: endpoint, successHandler: {[weak self] (response) in
+        repository.fetchServices(from: endpoint, successHandler: {[weak self] (response) in
             self?._isFetching.accept(false)
             self?._serviceTypeGroupList.accept(response)
             
