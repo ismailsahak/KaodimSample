@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
         
         viewModel = ServiceListViewModel(endpoint: Endpoint.home, repository: ServiceTypeListRepository.shared)
         
+//        Memory management by disposing the Observable once it is observed
         viewModel.list.drive(onNext: {[unowned self] (_) in
             self.tableView.reloadData()
         }).disposed(by: disposeBag)

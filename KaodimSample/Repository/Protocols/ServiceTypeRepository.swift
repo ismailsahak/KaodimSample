@@ -10,4 +10,5 @@ import Foundation
 
 protocol ServiceTypeRepository {
     func fetchServices(from endpoint: Endpoint, successHandler: @escaping (_ response: [ServiceTypeGroup]) -> Void, errorHandler: @escaping(_ error: Error) -> Void)
+    func handleError(errorHandler: @escaping(_ error: Error) -> Void, error: Error)
 }

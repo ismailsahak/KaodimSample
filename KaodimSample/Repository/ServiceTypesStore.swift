@@ -60,7 +60,7 @@ public class ServiceTypeListRepository: ServiceTypeRepository {
         
     }
     
-    private func handleError(errorHandler: @escaping(_ error: Error) -> Void, error: Error) {
+    func handleError(errorHandler: @escaping(_ error: Error) -> Void, error: Error) {
         DispatchQueue.main.async {
             errorHandler(error)
         }
